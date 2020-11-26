@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./website.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Task Oriented Service Design</title>
+  </head>
+  <body>
+    <!-- go to home -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light pl-40">
+      <a class="navbar-brand" href="index.html"><i class="material-icons">first_page</i></a>
+    </nav>
+    <!-- contents -->
+    <div class="container mt-5">
+      <!-- page title & iframe -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h1>Activity Feeds</h1><br>
+          <h6>서비스 활동 기록·업데이트 알림</h6>
+          <p>피드(feed)는 사용자에게 자주 업데이트되는 콘텐츠를 제공하는 데 쓰이는 데이터 포맷을 지칭하는 용어로 서비스 디자인에서는 업데이트되는 콘텐츠가 노출되는 화면을 의미한다. 업데이트 행위의 주체에 따라 ‘Activity Feeds’, ‘News Feeds’ 태스크로 구분된다. ‘Activity Feeds’ 태스크는 사용자 자신이 활동한 내역에 대한 기록 혹은 알림이 필요한 경우 사용하며 단일 페이지로 구성되어 있다. 활동 내역의 노출 순서는 최근 시간 순으로, 서비스 제작자의 의도가 반영된 알고리즘에 따라 노출되는 ‘News Feeds’ 태스크와 구분된다.</p>
+          <a href="about.html" class="text-muted">활용 방법 →</a>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row m-3 justify-content-center">
+            <iframe src="https://marvelapp.com/prototype/f616e7e?emb=1&iosapp=false&frameless=false" width="400" height="763" allowTransparency="true" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- page flow -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>'Activity Feeds' 태스크 화면 흐름</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <img src="./img/task-02-00-Activity Feeds.png" class="img-fluid mt-4 screenflow mx-auto d-block" alt="">
+        </div>
+      </div>
+      <!-- pages -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>'Activity Feeds' 태스크 화면 설계</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col mt-5">
+              <h6>사용자의 활동 내역을 기록하는 경우</h6>
+              <p>생산성(Productivity) 서비스에서 사용자가 스스로 할 일에 대한 체크리스트를 만들거나 금융(Finance) 서비스에서 가계부 작성, 결제 혹은 수입/지출 내역을 노출하는 화면이다.</p>
+              <img src="./img/task-02-Activity Feeds-Productivity.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+              <img src="./img/task-02-Activity Feeds-Finance.png" class="img-screen mx-auto d-block mt-3" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>사용자의 활동 내역을 알리는 경우</h6>
+              <p>소셜 네트워킹(Social Networking) 서비스에서 사용자가 행한 인터렉션에 대해 업데이트된 내역을 알리는 화면이다. 이러한 경우 알림(Notifications)이라 지칭하며 아래와 같은 종류로 구분된다.</p>
+              <ol class="ex">
+                <li>사용자 자신이 올린 게시글에서 타 사용자가 좋아요, 댓글 달기, 공유 하기 등으로 인터렉션 한 내역</li>
+                <li>사용자가 좋아요, 댓글 달기 등으로 인터렉션 한 타 사용자의 게시글 혹은 사용자가 태그된 게시글에 대한 업데이트 또는 타 사용자의 인터렉션 내역</li>
+                <li>사용자 계정에 대한 친구 맺기 등의 내역</li>
+                <li>사용자나 사용자가 친구 맺기로 네트워킹 한 타 사용자의 정보 변경 혹은 생일, 주최 이벤트 도래 등에 대한 내역</li>
+              </ol>
+              <img src="./img/task-02-Activity Feeds-Notifications.png" class="img-screen mx-auto d-block" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service categories -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>'Activity Feeds' 태스크가 나타나는 서비스 카테고리</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-end">
+            <a class="category" href="category-01-Social Networking.html" role="button">	Social Networking <p>소셜 네트워킹, 커뮤니티</p>	</a>
+            <a class="category" href="category-05-Productivity.html" role="button">	Productivity <p>작업·일정 관리 등 업무 효율화</p>	</a>
+            <a class="category" href="category-12-Finance.html" role="button">	Finance	<p>모바일 뱅킹, 가계부</p> </a>
+          </div>
+        </div>
+      </div>
+      <div class="push">
+
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="row m-3 mb-3 footer">
+      <p class="text-muted" style="font-size: 12px;">Copyright Ⓒ 2020 <a href="mailto:nadory.dezak@gmail.com?subject=feedback" class="text-muted"><u>Naeun Kim</u></a>. All Rights Reserved</p>
+    </div>
+  </body>
+</html>

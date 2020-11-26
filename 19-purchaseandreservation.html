@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./website.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Task Oriented Service Design</title>
+  </head>
+  <body>
+    <!-- go to home -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light pl-40">
+      <a class="navbar-brand" href="index.html"><i class="material-icons">first_page</i></a>
+    </nav>
+    <!-- contents -->
+    <div class="container mt-5">
+      <!-- page title & iframe -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h1>Purchase & Reservation</h1><br>
+          <h6>구매 의도 발생, 구매·결제</h6>
+          <p>‘Purchase & Reservation’ 태스크는 사용자가 재화를 지불하고 쇼핑 서비스나 배달 서비스에서 판매 제품을 구매 혹은 주문하거나 숙박 및 항공권을 구매하는 기능이다. 사용자는 서비스가 제공하는 목록에서 추천, 검색 기능으로 원하는 제품을 선별하여 제품에 대한 상세한 정보(‘Content’ 태스크)를 탐색한다. 구매 의사가 발생한 경우 해당 제품의 상세 페이지에서 바로 구매 혹은 장바구니에 보관 기능을 선택한다. 이후 구매 정보 확인 페이지에서 구매할 제품 목록 및 결제 예정 정보를 확인하고, 결제 희망 수단으로 결제를 진행한다. 결제 과정을 정상적으로 진행한 후 구매 완료 페이지에서 완료 상태를 확인한다. 서비스 제작자는 구매 의도 발생, 구매 정보 확인, 결제, 결제 완료의 각 과정에서 사용자가 원하는 정보를 쉽게 확인하고 다음 과정으로 원활히 연결시킬 수 있도록 설계해야 한다.</p>
+          <a href="about.html" class="text-muted">활용 방법 →</a>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row m-3 justify-content-center">
+            <iframe src="https://marvelapp.com/prototype/7217635?emb=1&iosapp=false&frameless=false" width="400" height="763" allowTransparency="true" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- page flow -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Purchase & Reservation’ 태스크 화면 흐름</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <img src="./img/task-19-00-Purchase.png" class="img-fluid mt-4 screenflow mx-auto d-block" alt="">
+        </div>
+      </div>
+      <!-- pages -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Purchase & Reservation’ 태스크 화면 설계</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col mt-5">
+              <h6>구매 의도 발생 (Link to purchase)</h6>
+              <p>제품 상세 페이지에서 구매 의도를 구매로 연결할 수 있도록 구매 의사의 정도에 따라 다양한 접점을 마련해야 한다. 일반적으로 구매를 희망하는 정도에 따라 즉시 구매, 장바구니 담기, 위시리스트 담기와 같은 접점이 마련되며, 사용자가 제품 상세 페이지에서 해당 기능을 쉽게 발견할 수 있도록 배치한다. 즉시 구매와 장바구니 담기 기능은 결제 프로세스로 바로 연결되는 과업이므로 화면에서 가장 쉽게 발견될 수 있도록 스크롤 플로팅(scroll floating) 형태로 배치한다. 현재 구매 의사는 없으나 차후 구매로 연결될 수 있는 위시리스트 담기와 같은 기능 또한 상단 플로팅 메뉴나 하단 플로팅 메뉴에 배치하되 즉시 구매 및 장바구니 담기 기능보다 가시성을 낮춰 서브 기능으로서 발견될 수 있도록 설계한다.</p>
+              <img src="./img/task-11-Purchase & Reservation-01.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>장바구니 (Shopping cart)</h6>
+              <p>사용자가 즉시 구매를 보류하거나 여러 개 상품을 함께 주문하는 경우 장바구니 담기 기능을 이용한다. 본 페이지에는 장바구니 담기 기능으로 담겨진 제품들의 리스트를 확인하고 최종 구매 절차로 이어질 수 있도록 역할한다. 따라서 담겨진 제품을 인지할 수 있는 썸네일, 제품명, 금액, 수량, 선택한 부가 제품 스펙을 노출하며 여러 개 제품을 함께 선택하여 구매할 수 있도록 제품 선택 체크박스를 노출한다. 이 체크박스는 기본적으로 전체 제품을 구매할 것이라 간주하고 모두 체크된 상태로 노출해야 구매 과정으로의 연결이 보다 원활할 수 있다. 이미 구매할 의사를 갖고 장바구니에 담은 제품을 일일이 선택하는 횟수 보다 선택된 제품 중 구매하지 않을 제품을 체크 해제하는 횟수가 일반적으로 더 적기 때문이다.</p>
+              <img src="./img/task-11-Purchase & Reservation-02.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>결제 (Payment)</h6>
+              <p>결제 전 구매할 제품 및 금액을 확인하고 결제 수단을 선택하는 화면이다. 본 화면의 주요 과업은 결제 수단의 선택이다. 이전 화면에서 구매할 제품의 정보와 가격을 확인하고 인입하였으므로 해당 정보의 요약 정보를 노출하고, 결제 수단 선택을 첫 페이지에서 발견할 수 있도록 한다. 이후 선택한 결제 수단에 따라 결제 페이지가 노출되며 자체 결제 기능을 제공하지 않는 한 별도 결제 서비스로 연결된다.</p>
+              <img src="./img/task-11-Purchase & Reservation-03.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>결제 완료 (Confirm purchase)</h6>
+              <p>결제 완료 후 주문 완료 상태를 확인하는 페이지이다. 일반적으로 배송이 완료되기 전까지 사용자가 자주 궁금해하는 사항들을 미리 안내하여 사용자 불만 소지를 줄인다.</p>
+              <img src="./img/task-11-Purchase & Reservation-04.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service categories -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Purchase & Reservation’ 태스크가 나타나는 서비스 카테고리</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-end">
+            <a class="category" href="category-01-Social Networking.html" role="button">	Social Networking <p>소셜 네트워킹, 커뮤니티</p>	</a>
+            <a class="category" href="category-02-Photo & Video.html" role="button">	Photo & Video <p>사진 및 비디오 캡처, 편집</p>	</a>
+            <a class="category" href="category-03-Food & Drink.html" role="button">	Food & Drink <p>레시피, 레스토랑 리뷰</p>	</a>
+            <a class="category" href="category-04-Shopping.html" role="button">	Shopping <p>쇼핑, 쿠폰, 상품 리뷰</p>	</a>
+            <a class="category" href="category-09-Lifestyle.html" role="button">	Lifestyle <p>부동산, 취미, 인테리어</p>	</a>
+          </div>
+        </div>
+      </div>
+      <div class="push">
+
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="row m-3 mb-3 footer">
+      <p class="text-muted" style="font-size: 12px;">Copyright Ⓒ 2020 <a href="mailto:nadory.dezak@gmail.com?subject=feedback" class="text-muted"><u>Naeun Kim</u></a>. All Rights Reserved</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./website.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Task Oriented Service Design</title>
+  </head>
+  <body>
+    <!-- go to home -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light pl-40">
+      <a class="navbar-brand" href="index.html"><i class="material-icons">first_page</i></a>
+    </nav>
+    <!-- contents -->
+    <div class="container mt-5">
+      <!-- page title & iframe -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h1>Content</h1><br>
+          <h6>서비스 별 콘텐츠 페이지</h6>
+          <p>‘Content’ 태스크는 콘텐츠가 있는 서비스에 모두 노출되며, 콘텐츠가 노출된 단일 페이지로 구성된다. 콘텐츠 페이지를 구성하는 컴포넌트는 아래와 같이 서비스 카테고리 별로 상이하다.</p>
+          <a href="about.html" class="text-muted">활용 방법 →</a>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row m-3 justify-content-center">
+            <iframe src="https://marvelapp.com/prototype/bca2f4d?emb=1&iosapp=false&frameless=false" width="400" height="763" allowTransparency="true" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- page flow -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Content’ 태스크 화면 흐름</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <img src="./img/task-07-00-Content.png" class="img-fluid mt-4 screenflow mx-auto d-block" alt="">
+        </div>
+      </div>
+      <!-- pages -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Content’ 태스크 화면 설계</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col mt-5">
+              <h6>텍스트, 이미지의 일반적인 콘텐츠 페이지가 나타나는 서비스 (General content)</h6>
+              <ol class="ex">
+                <li>생산성 (Productivity): 특정 프로세스나 작업을 더 체계적이거나 효과적으로 수행할 수 있도록 돕는 서비스 카테고리이다. 생산성 서비스에서 ‘Content’ 태스크는 메모 앱이나 이메일 앱과 같이 텍스트나 이미지 위주로 작성된 메모나 이메일을 확인하는 페이지에 해당한다.</li>
+                <li>비즈니스 (Business): 비즈니스를 위한 콘텐츠의 공동 작업, 편집 또는 공유를 위한 수단을 제공하는 서비스이다. 프로젝트 및 문서 관리 등의 서비스가 해당하며, 본 서비스에서 ‘Content’ 태스크는 등록된 할 일이나 공동 프로젝트의 작성된 정보를 확인하는 페이지에 해당한다.</li>
+              </ol>
+              <img src="./img/task-07-Content-01.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>큐레이션 콘텐츠 페이지가 나타나는 서비스 (Curation content)</h6>
+              <p>큐레이션 콘텐츠는 텍스트, 이미지 뿐만 아니라 콘텐츠를 설명할 수 있는 비디오, 차트, 인포그래픽 등이 함께 노출되므로 타 페이지에 비해 페이지 스크롤이 상대적으로 긴 경향이 있다. 따라서 최초 진입 시 노출되는 상단 메인 영역이 콘텐츠가 포함한 전체 정보를 함의하고, 사용자로 하여금 스크롤을 통한 페이지 탐색을 유도할 수 있도록 타이틀 텍스트 보다 시선을 즉각적으로 유도할 수 있는 이미지를 배치한다. 이미지가 여러 개인 경우 페이지 컨트롤(page controls)를 통해 탐색할 수 있도록 한다. 또한 콘텐츠 게시 시각, 게시자 정보, 스코어 인디케이터(rating indicator) 등을 노출하여 스크롤링 전 개략적인 정보를 인지할 수 있도록 한다. 또한 페이지 말미에 사용자 간 의견을 나눌 수 있는 코멘트 컴포넌트, 다른 콘텐츠 탐색을 위한 추천 목록을 노출하여 큐레이션 콘텐츠 탐색이 지속적으로 이어질 수 있도록 유도한다.</p>
+              <ol class="ex">
+                <li>뉴스 (News): 관심 분야의 뉴스를 제공하는 서비스이다. 본 서비스에서 ‘Content’ 태스크는 뉴스 상세 페이지에 해당한다. </li>
+                <li>라이프스타일 (Lifestyle): 부동산, 취미, 패션, 인테리어 등 일상적으로 흥미를 느끼는 주제에 대한 정보를 제공하는 서비스이다. 본 서비스에서 ‘Content’ 태스크는 사용자가 탐색한 정보에 대한 상세 페이지에 해당한다.</li>
+                <li>여행 (Travel): 여행 계획이나 관련 예약, 여행 정보 탐색 등을 지원하는 서비스이다. 본 서비스에서 ‘Content’ 태스크는 여행 정보 상세 페이지에 해당한다. 사용자로 하여금 예약이나 구매 등 상업적 과업을 수행하게 하는 것이 목적이므로 이미지, 텍스트 등 정보가 기본 펼침 상태로 노출되는 뉴스나 라이프스타일 서비스와 다르게 더보기 버튼으로 미리보기 정보만 노출하여 주요 정보를 빠르게 파악할 수 있도록 하고 구매 의도가 있는 사용자가 더보기 버튼을 선택할 경우 추가 정보를 탐색할 수 있도록 한다. 또한 주요 과업을 플로팅 버튼(floating button) 으로 노출하여 과업 수행 의도가 있는 사용자가 빠르게 접근할 수 있도록 한다.</li>
+              </ol>
+              <img src="./img/task-07-Content-02.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>미디어 중심의 콘텐츠 페이지가 나타나는 서비스 (Media content)</h6>
+              <ol class="ex">
+                <li>건강 및 피트니스 (Health & Fitness): 스트레스 관리, 피트니스 및 여가 활동을 포함하여 사용자가 건강한 삶을 영위할 수 있도록 지원하는 서비스이다. 본 서비스에서 ‘Content’ 태스크는 피트니스 프로그램에 대한 자세한 정보를 소개하는 페이지와 피트니스 프로그램을 시청하는 비디오 페이지로 구성된다.</li>
+                <li>음악 (Music): 음악을 감상하거나 녹음 혹은 작곡을 위한 서비스이다. 본 서비스에서 ‘Content’ 태스크는 등록된 음원을 감상하거나 녹음된 사운드를 재생하는 페이지에 해당한다.</li>
+              </ol>
+              <img src="./img/task-07-Content-03.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+              <img src="./img/task-07-Content-04.png" class="img-screen mx-auto d-block mx-auto d-block mt-3" alt="">
+            </div>
+            <div class="col mt-5">
+              <h6>인터렉션 중심의 콘텐츠 페이지가 나타나는 서비스 (Interactive content)</h6>
+              <ol class="ex">
+                <li>교육 (Education): 특정 기술이나 주제에 관한 학습을 제공하는 서비스이다. 본 서비스에서 ‘Content’ 태스크는 각 교육 콘텐츠 상세페이지에 해당하며, 콘텐츠의 특성에 따라 클릭, 스와이프, 핀치(pinch) 등 터치 인터렉션을 활용한 탐색 경험을 제공한다.</li>
+              </ol>
+              <img src="./img/task-07-Content-05.png" class="img-screen mx-auto d-block mx-auto d-block" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service categories -->
+      <div class="row m-3 mb-5">
+        <div class="col-12 col-md-4">
+          <h6>‘Content’ 태스크가 나타나는 서비스 카테고리</h6>
+          <div class="dropdown-divider"></div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-end">
+            <a class="category" href="category-03-Food & Drink.html" role="button">	Food & Drink <p>레시피, 레스토랑 리뷰</p>	</a>
+            <a class="category" href="category-04-Shopping.html" role="button">	Shopping <p>쇼핑, 쿠폰, 상품 리뷰</p>	</a>
+            <a class="category" href="category-05-Productivity.html" role="button">	Productivity <p>작업·일정 관리 등 업무 효율화</p>	</a>
+            <a class="category" href="category-06-News.html" role="button">	News <p>방송 미디어, 뉴스리더</p> </a>
+            <a class="category" href="category-07-Travel.html" role="button">	Travel <p>항공권·호텔 예약, 여행 계획 및 정보 찾기</p>	</a>
+            <a class="category" href="category-09-Lifestyle.html" role="button">	Lifestyle <p>부동산, 취미, 인테리어</p>	</a>
+            <a class="category" href="category-10-Health & Fitness.html" role="button">	Health & Fitness <p>운동 추적, 명상, 체중 관리</p>	</a>
+            <a class="category" href="category-11-Business.html" role="button">	Business <p>공동 작업 관리, 구직</p>	</a>
+            <a class="category" href="category-13-Education.html" role="button">	Education <p>학습, 학교 포털</p>	</a>
+            <a class="category" href="category-15-Music.html" role="button">	Music <p>음악 감상, 녹음·연주, 작곡</p>	</a>
+          </div>
+        </div>
+      </div>
+      <div class="push">
+
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="row m-3 mb-3 footer">
+      <p class="text-muted" style="font-size: 12px;">Copyright Ⓒ 2020 <a href="mailto:nadory.dezak@gmail.com?subject=feedback" class="text-muted"><u>Naeun Kim</u></a>. All Rights Reserved</p>
+    </div>
+  </body>
+</html>
